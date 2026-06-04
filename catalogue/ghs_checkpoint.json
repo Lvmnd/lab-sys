@@ -1,0 +1,514 @@
+{
+  "s1": {
+    "Agar powder": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Beef extract": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Chloroform": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Crystal violet": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Glucose": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "HCl": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Isopropanol": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Lactose": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Methylene blue": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "MgCl2": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "NaCl": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "NaOH": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Safranin": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sucrose": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sandal": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    }
+  },
+  "s2": {
+    "1-Propanol": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "3,5-diNitrosalicylic Acid": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Acetic Acid glacial": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Acetic Anhydride": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Acetone": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Alcohol": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium Acetate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium Carbonate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium Chloride": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium Fluoride": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium heptamolybdate tetrahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium monoVanadate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium Nitrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium PeroxodiSulfate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium Sulfate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ammonium Thiocyanate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Amylose from Potato": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Anthrone": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Azomethine H": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Barium Chloride dihydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Barium Hydroxide octahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Benzene": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Benzoic Acid": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "beta-Mercaptoethanol": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Boric Acid": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Brucine": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Caffein": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Calcium Carbonate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Calcium Chloride": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Calcium Chloride dihydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Chloroform": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Citric Acid monohydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Cobalt (II) Chloride hexahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Cobalt (II) Sulfate heptahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Copper (II) Oxide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Crystal violet indicator": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Curcumin": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Cyclohexane": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "di-Sodium Hydrogen Phosphate dodecahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Dichlormethane": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ethanol Absolute": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Glycerol": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Glycine": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Hydroxylammonium Chloride": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Indigo Carmine": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Iron (II) Sulfate Heptahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Iso-Octane": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "L-Proline": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Magnesium Chloride hexahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Magnesium Hydroxide Carbonate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Magnesium Oxide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Magnesium Sulfate anhydrous": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Magnesium Sulfate heptahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Mercury (II) Chloride": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Mercury (II) Iodide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Methanol": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Methyl Orange indicator": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "n-Hexane": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Nfw": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Ninhydrin": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Oxalic Acid dihydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Paraffin Liquid": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Phenol": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Phenol red indicator": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Bromate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Bromide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Chloride": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Chromate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Dichromate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Dihydrogen Phosphate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Disulfate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Hexacyanoferrate (III)": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Hydroxide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Iodide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Nitrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Permanganate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Sodium Tartrate tetrahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Sulfate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Sulfide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Potassium Thiocyanate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Selenium": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Silicon Dioxide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Silver Nitrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Acetate anhydrous": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Acetate trihydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Carbonate anhydrous": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Chloride": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium dihydrogen Phosphate monohydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium dodecyl Sulfate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Fluoride": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Hydrogen Carbonate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Hydroxide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Nitrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Nitrite": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Sulfate anhydrous": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium Sulfite anhydrous": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium thiosulfate anhydrous": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sodium thiosulfate pentahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Sulfuric Acid": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Tannic Acid": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "TE Buffer": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Tin (II) Chloride dihydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Titriplex I": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Titriplex II": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Titriplex III": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Toluene": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "tri-Sodium Citrate dihydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Trichloroacetic acid": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Tungsten (IV) Oxide": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Zinc Acetate dihydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Zinc Sulfate heptahydrate": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    },
+    "Safranin": {
+      "ghs_hazard_codes": "",
+      "ghs_pictograms": ""
+    }
+  }
+}

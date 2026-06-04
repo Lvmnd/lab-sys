@@ -1,0 +1,484 @@
+============================================================
+Future University LIMS — PubChem Catalogue Enrichment
+============================================================
+
+Reading: lab_sys_master_catalogue.xlsx
+
+[Sheet 1] Master Catalogue
+  Found 219 chemical items to enrich...
+  [1/219] Acrylamide/Bis ... [not found] 
+  [2/219] Agar powder ... [found] CAS: 9002-18-0
+  [3/219] Agarose ... [not found] 
+  [4/219] Anti-A serum ... [not found] 
+  [5/219] Anti-B serum ... [not found] 
+  [6/219] Anti-D serum ... [not found] 
+  [7/219] APS (Ammonium Persulfate) ... [not found] 
+  [8/219] Aquadest/DI water ... [not found] 
+  [9/219] Beef extract ... [found] CAS: 103-47-9
+  [10/219] Benedict reagent ... [not found] 
+  [11/219] Biohazard waste bag ... [not found] 
+  [12/219] Biuret reagent ... [not found] 
+  [13/219] Blocking buffer ... [not found] 
+  [14/219] Chloroform ... [found] CAS: 67-66-3
+  [15/219] Coomassie stain ... [not found] 
+  [16/219] Crystal violet ... [found] CAS: 548-62-9
+  [17/219] Destaining solution ... [not found] 
+  [18/219] DNA blood and tissue extraction kit ... [not found] 
+  [19/219] DNA fecal and soil extraction kit ... [not found] 
+  [20/219] DNA ladder ... [not found] 
+  [21/219] DNase ... [not found] 
+  [22/219] dNTP mix ... [not found] 
+  [23/219] ECL substrate ... [not found] 
+  [24/219] Elution buffer ... [not found] 
+  [25/219] Ethanol 70% ... [not found] 
+  [26/219] Ethanol/Isopropanol ... [not found] 
+  [27/219] Ethidium bromide alternatif ... [not found] 
+  [28/219] Food coloring dye ... [not found] 
+  [29/219] Forward primer ... [not found] 
+  [30/219] Glucose ... [found] CAS: 200-075-1
+  [31/219] Gram iodine ... [not found] 
+  [32/219] HCl ... [found] CAS: 7647-01-0
+  [33/219] Iodine solution ... [not found] 
+  [34/219] Isopropanol ... [found] CAS: 67-63-0
+  [35/219] Lactose ... [found] CAS: 200-559-2
+  [36/219] Lancet steril ... [not found] 
+  [37/219] LB agar ... [not found] 
+  [38/219] LB broth ... [not found] 
+  [39/219] Loading dye ... [not found] 
+  [40/219] Lysis buffer ... [not found] 
+  [41/219] Methylene blue ... [found] CAS: 61-73-4
+  [42/219] MgCl2 ... [found] CAS: 7786-30-3
+  [43/219] NaCl ... [found] CAS: 7647-14-5
+  [44/219] NanoDrop pedestal cleaner ... [not found] 
+  [45/219] NaOH ... [found] CAS: 1310-73-2
+  [46/219] Negative control (NTC) ... [not found] 
+  [47/219] Nuclease-free water ... [not found] 
+  [48/219] Nutrient agar ... [not found] 
+  [49/219] Nutrient broth ... [not found] 
+  [50/219] PBS buffer ... [not found] 
+  [51/219] PCR buffer ... [not found] 
+  [52/219] PCR master mix ... [not found] 
+  [53/219] Peptone ... [not found] 
+  [54/219] Positive control DNA ... [not found] 
+  [55/219] Primary antibody ... [not found] 
+  [56/219] Protein ladder ... [not found] 
+  [57/219] Proteinase K ... [not found] 
+  [58/219] PVDF/Nitrocellulose membrane ... [not found] 
+  [59/219] Reverse primer ... [not found] 
+  [60/219] RNA extraction kit ... [not found] 
+  [61/219] RNase-free water ... [not found] 
+  [62/219] Running buffer ... [not found] 
+  [63/219] Safranin ... [found] CAS: 477-73-6
+  [64/219] Sample buffer ... [not found] 
+  [65/219] SDS ... [not found] 
+  [66/219] Secondary antibody HRP ... [not found] 
+  [67/219] Sharps container ... [not found] 
+  [68/219] Slide aglutinasi ... [not found] 
+  [69/219] Sucrose ... [found] CAS: 57-50-1
+  [70/219] Sudan III/IV ... [not found] 
+  [71/219] SYBR Green master mix ... [not found] 
+  [72/219] TAE/TBE buffer ... [not found] 
+  [73/219] Taq DNA polymerase ... [not found] 
+  [74/219] TaqMan probe opsional ... [not found] 
+  [75/219] TEMED (Tetramethylethylenediamine ... [not found] 
+  [76/219] Transfer buffer ... [not found] 
+  [77/219] Tris-HCl buffer ... [not found] 
+  [78/219] TRIzol reagent ... [not found] 
+  [79/219] Wash buffer ... [not found] 
+  [80/219] Yeast extract ... [not found] 
+  [81/219] Alkohol 70% 1L ... [not found] 
+  [82/219] Allumunium foil ... [not found] 
+  [83/219] Falcon tube 15 ml ... [not found] 
+  [84/219] Falcon tube 50 ml ... [not found] 
+  [85/219] Filter paper ... [not found] 
+  [86/219] Filter tips 10 ul ... [not found] 
+  [87/219] Filter tips 1000 ul ... [not found] 
+  [88/219] Filter tips 200 ul ... [not found] 
+  [89/219] Masker ear loop ... [not found] 
+  [90/219] Masker ikat ... [not found] 
+  [91/219] Microtube 1.5 ml ... [not found] 
+  [92/219] Microtube 2.0 ml ... [not found] 
+  [93/219] Microtube 3.0 ml ... [not found] 
+  [94/219] Microtube 5.0 ml ... [not found] 
+  [95/219] Non-filter tips 10 ul putih ... [not found] 
+  [96/219] Non-filter tips 100 ul kuning ... [not found] 
+  [97/219] Non-filter tips 1000 ul biru ... [not found] 
+  [98/219] Optical sealing film ... [not found] 
+  [99/219] Parafilm ... [not found] 
+  [100/219] PCR tube 0.2 mL ... [not found] 
+  [101/219] Sabun cuci ... [not found] 
+  [102/219] Sarung tangan lateks ... [not found] 
+  [103/219] Sarung tangan nitril ... [not found] 
+  [104/219] Spray alkohol ... [not found] 
+  [105/219] Tissue ... [not found] 
+  [106/219] Gunting ... [not found] 
+  [107/219] Jas laboratorium ... [not found] 
+  [108/219] Micropipette P10 ... [not found] 
+  [109/219] Micropipette P100 ... [not found] 
+  [110/219] Micropipette P1000 ... [not found] 
+  [111/219] Micropipette P20 ... [not found] 
+  [112/219] Micropipette P200 ... [not found] 
+  [113/219] Optical PCR plate ... [not found] 
+  [114/219] Pinset ... [not found] 
+  [115/219] Pipette stand ... [not found] 
+  [116/219] Rak tabung/tube rack (multi size) ... [not found] 
+  [117/219] Safety goggles ... [not found] 
+  [118/219] Sandal ... [found] 
+  [119/219] Sarung tangan kain ... [not found] 
+  [120/219] Scalpel/pisau bedah ... [not found] 
+  [121/219] Informa Kiev Lemari Arsip Kantor Metal Dengan Pint ... [not found] 
+  [122/219] Informa Kiev Loker Besi Multi 15 Pintu - Cokelat M ... [not found] 
+  [123/219] Informa Zidan Kursi Kantor Sandaran Rendah - Hitam ... [not found] 
+  [124/219] Beaker glass 50 ml ... [not found] 
+  [125/219] Beaker glass 100 ml ... [not found] 
+  [126/219] Beaker glass 250 ml ... [not found] 
+  [127/219] Beaker glass 500 ml ... [not found] 
+  [128/219] Beaker glass 1000 ml ... [not found] 
+  [129/219] Beaker glass 2000 ml ... [not found] 
+  [130/219] Erlenmeyer 50 ml ... [not found] 
+  [131/219] Erlenmeyer 100 ml ... [not found] 
+  [132/219] Erlenmeyer 250 ml ... [not found] 
+  [133/219] Erlenmeyer 500 ml ... [not found] 
+  [134/219] Erlenmeyer 1000 ml ... [not found] 
+  [135/219] Erlenmeyer 2000 ml ... [not found] 
+  [136/219] Tabung reaksi 5 ml ... [not found] 
+  [137/219] Tabung reaksi 10 ml ... [not found] 
+  [138/219] Cawan petri 100 ml ... [not found] 
+  [139/219] Cawan petri 200 ml ... [not found] 
+  [140/219] Pipet tetes kaca panjang ... [not found] 
+  [141/219] Cuvette UV (plastik/disposable) ... [not found] 
+  [142/219] Cuvette UV (kuarsa/kaca/quartz) ... [not found] 
+  [143/219] Gelas ukur 10 ml ... [not found] 
+  [144/219] Gelas ukur 25 ml ... [not found] 
+  [145/219] Gelas ukur 50 ml ... [not found] 
+  [146/219] Gelas ukur 100 ml ... [not found] 
+  [147/219] Gelas ukur 250 ml ... [not found] 
+  [148/219] Gelas ukur 500 ml ... [not found] 
+  [149/219] Gelas ukur 1000 ml ... [not found] 
+  [150/219] Corong kaca 50 mm ... [not found] 
+  [151/219] Corong kaca 75 mm ... [not found] 
+  [152/219] Corong kaca 100 mm ... [not found] 
+  [153/219] Bunsen burner ... [not found] 
+  [154/219] Mortar & pestle ... [not found] 
+  [155/219] Kaca objek / object glass ... [not found] 
+  [156/219] Pengaduk kaca ... [not found] 
+  [157/219] Pengaduk stainless ... [not found] 
+  [158/219] Spatula ... [not found] 
+  [159/219] Penangas kaki tiga ... [not found] 
+  [160/219] Buret 25 ml ... [not found] 
+  [161/219] Buret 50 ml ... [not found] 
+  [162/219] Statif buret ... [not found] 
+  [163/219] Labu ukur 50 ml ... [not found] 
+  [164/219] Labu ukur 100 ml ... [not found] 
+  [165/219] Labu ukur 250 ml ... [not found] 
+  [166/219] Labu ukur 500 ml ... [not found] 
+  [167/219] Dropper 1 ml ... [not found] 
+  [168/219] Dropper 3 ml ... [not found] 
+  [169/219] Dropper 5 ml ... [not found] 
+  [170/219] Pipet tetes kaca pendek ... [not found] 
+  [171/219] Autoclave 50 liter ... [not found] 
+  [172/219] Biosafety cabinet (BSC) class I ... [not found] 
+  [173/219] Biosafety cabinet (BSC) class II ... [not found] 
+  [174/219] Centrifuge konvensional ... [not found] 
+  [175/219] Colony counter ... [not found] 
+  [176/219] Deep freezer -80C ... [not found] 
+  [177/219] Freezer -20C 300 liter ... [not found] 
+  [178/219] Gel documentation system ... [not found] 
+  [179/219] Gel electrophoresis set ... [not found] 
+  [180/219] Heat block ... [not found] 
+  [181/219] Hot plate stirrer ... [not found] 
+  [182/219] Incubator 250 liter (minimum) ... [not found] 
+  [183/219] Incubator Warm & Cold (shaker) ... [not found] 
+  [184/219] Laminar airflow cabinet ... [not found] 
+  [185/219] Lemari asam/fume hood ... [not found] 
+  [186/219] Lemari bahan kimia anti korosif ... [not found] 
+  [187/219] Lemari multifungsi ... [not found] 
+  [188/219] Lemari penyimpanan dokumen ... [not found] 
+  [189/219] Lemari reagen ... [not found] 
+  [190/219] Microplate reader ... [not found] 
+  [191/219] Microwave ... [not found] 
+  [192/219] Mikroskop Binocular ... [not found] 
+  [193/219] NanoDrop spectrophotometer ... [not found] 
+  [194/219] Oven ... [not found] 
+  [195/219] pH meter ... [not found] 
+  [196/219] Refrigerated centrifuge ... [not found] 
+  [197/219] Refrigerator -40C ... [not found] 
+  [198/219] Refrigerator 4C 2 pintu 600 liter ... [not found] 
+  [199/219] Refrigerator 8C ... [not found] 
+  [200/219] SDS-PAGE system ... [not found] 
+  [201/219] Showcase 2 pintu ... [not found] 
+  [202/219] Spektrofotometer UV-Vis ... [not found] 
+  [203/219] Spindown ... [not found] 
+  [204/219] Synology Disk Station 2-bay 1.7 GHz 2GB RAM ... [not found] 
+  [205/219] Synology Hard Disk Drive 3 5 inch SATA client 4TB ... [not found] 
+  [206/219] Thermocycler PCR machine ... [not found] 
+  [207/219] Thermocycler PCR machine + Electrophoresis apparat ... [not found] 
+  [208/219] Timbangan analitik ... [not found] 
+  [209/219] Uninterruptible Power Supply (UPS) 1200 W ... [not found] 
+  [210/219] UV transilluminator ... [not found] 
+  [211/219] Vortex mixer ... [not found] 
+  [212/219] Water bath ... [not found] 
+  [213/219] Western blot transfer unit ... [not found] 
+  [214/219] Oxidase reagent ... [not found] 
+  [215/219] Catalase reagent ... [not found] 
+  [216/219] Sub Total ... [not found] 
+  [217/219] Pajak (11%) ... [not found] 
+  [218/219] Diskon ... [not found] 
+  [219/219] TOTAL ... [not found] 
+
+[Sheet 2] Reagent Master
+  Found 252 chemical items to enrich...
+  [1/252] 1-Propanol ... [found] CAS: 71-23-8
+  [2/252] 3,5-diNitrosalicylic Acid ... [found] CAS: 609-99-4
+  [3/252] 5-Sulfosalicycacid dihydrate ... [not found] 
+  [4/252] Acetic Acid 96% ... [not found] 
+  [5/252] Acetic Acid glacial ... [found] CAS: 64-19-7
+  [6/252] Acetic Anhydride ... [found] CAS: 108-24-7
+  [7/252] Acetone ... [found] CAS: 67-64-1
+  [8/252] Agarose (Low electroendoosmosis) ... [not found] 
+  [9/252] Agarose (medium electroendoosmosis) ... [not found] 
+  [10/252] Agarose Elektroforesis ... [not found] 
+  [11/252] Albumin fraction V ... [not found] 
+  [12/252] Alcohol ... [found] CAS: 64-17-5
+  [13/252] Amidosulfuricacid ... [not found] 
+  [14/252] Ammonia Solution 25% ... [not found] 
+  [15/252] AMMONIUM ACETAT ... [not found] 
+  [16/252] Ammonium Acetate ... [found] CAS: 631-61-8
+  [17/252] Ammonium Carbonate ... [found] CAS: 506-87-6
+  [18/252] Ammonium Chloride ... [found] CAS: 12125-02-9
+  [19/252] Ammonium Fluoride ... [found] CAS: 12125-01-8
+  [20/252] Ammonium heptamolybdate tetrahydrate ... [found] 
+  [21/252] Ammonium Hydroxide Solution ... [not found] 
+  [22/252] Ammonium Iron (II) Sulfate hexahydrate ... [not found] 
+  [23/252] Ammonium monoVanadate ... [found] CAS: 7803-55-6
+  [24/252] Ammonium Nitrate ... [found] CAS: 6484-52-2
+  [25/252] Ammonium PeroxodiSulfate ... [not found] 
+  [26/252] Ammonium Sulfate ... [found] CAS: 7783-20-2
+  [27/252] Ammonium Thiocyanate ... [found] CAS: 1762-95-4
+  [28/252] Amylose from Potato ... [found] CAS: 6401-81-6
+  [29/252] Anthrone ... [found] CAS: 90-44-8
+  [30/252] Azomethine H ... [found] CAS: 32266-60-7
+  [31/252] Barium Chloride dihydrate ... [found] CAS: 10326-27-9
+  [32/252] Barium Chloride Suprapure ... [not found] 
+  [33/252] Barium Hydroxide octahydrate ... [not found] 
+  [34/252] Benedict's Reagent Qualitative ... [not found] 
+  [35/252] Benedict's Reagent Quantitative ... [not found] 
+  [36/252] Benzene ... [found] CAS: 71-43-2
+  [37/252] Benzoic Acid ... [found] CAS: 65-85-0
+  [38/252] beta-Mercaptoethanol ... [found] CAS: 60-24-2
+  [39/252] Boric Acid ... [found] CAS: 10043-35-3
+  [40/252] BORON TRIFLUORIDE-METHANOL COMPLEX ( 20 ... [not found] 
+  [41/252] Brain Heart Infusion Broth ... [not found] 
+  [42/252] Brilliant Green (Hydrogen Sulfate) ... [not found] 
+  [43/252] Bromcresol Green Indicator ... [not found] 
+  [44/252] Bromcresol Green Sodium Salt ... [not found] 
+  [45/252] Brucine ... [found] CAS: 357-57-3
+  [46/252] Buffer pH 10 ... [not found] 
+  [47/252] Buffer pH 4 ... [not found] 
+  [48/252] Buffer pH 7 ... [not found] 
+  [49/252] Buffered Peptone Water ... [not found] 
+  [50/252] Caffein ... [found] CAS: 58-08-2
+  [51/252] Calcium Carbonate ... [found] CAS: 471-34-1
+  [52/252] Calcium Chloride ... [found] CAS: 10043-52-4
+  [53/252] Calcium Chloride dihydrate ... [found] CAS: 10035-04-8
+  [54/252] Candida albicans ... [not found] 
+  [55/252] Candida tropicalis ... [not found] 
+  [56/252] Chloroform ... [found] CAS: 67-66-3
+  [57/252] Chorium Standard 1000 mg/l ... [not found] 
+  [58/252] cis-decahydronapthalene 99% ... [not found] 
+  [59/252] Citric Acid monohydrate ... [found] CAS: 5949-29-1
+  [60/252] Cobalt (II) Chloride hexahydrate ... [found] CAS: 616-574-6
+  [61/252] Cobalt (II) Sulfate heptahydrate ... [not found] 
+  [62/252] Congo red indicator ... [not found] 
+  [63/252] Copper (II) Oxide ... [found] CAS: 163686-95-1
+  [64/252] Copper (II) Sulfate anhydrous ... [not found] 
+  [65/252] Crystal violet indicator ... [found] CAS: 548-62-9
+  [66/252] CTAB, N-cetyl-N,N,N-trimethylammonium bromide ... [not found] 
+  [67/252] Curcumin ... [found] CAS: 458-37-7
+  [68/252] Cyclohexane ... [found] CAS: 110-82-7
+  [69/252] D (+) Glucose monohydrate for microbiology ... [not found] 
+  [70/252] D (+)-Glucose monohydrate ... [not found] 
+  [71/252] di-Ammonium Oxalate Monohydrate ... [not found] 
+  [72/252] di-Potassium Hydrogen Phosphate anhydrous ... [not found] 
+  [73/252] di-Sodium Hydrogen Phosphate anhydrous ... [not found] 
+  [74/252] di-Sodium Hydrogen Phosphate dodecahydrate ... [found] CAS: 10039-32-4
+  [75/252] di-Sodium Hydrogen Phosphate Heptahydrate ... [not found] 
+  [76/252] di-Sodium Oxalate ... [not found] 
+  [77/252] di-Sodium tetraborate anhydrous ... [not found] 
+  [78/252] Dichlormethane ... [found] CAS: 75-09-2
+  [79/252] DiethyleneTriaminPentaAceticAcid (DTPA) ... [not found] 
+  [80/252] DNA Ladder 100 Bp ... [not found] 
+  [81/252] dodecyl-Sulfate Sodium Salt ... [not found] 
+  [82/252] E-COLI, CRM ... [not found] 
+  [83/252] Ethanol 70% ... [not found] 
+  [84/252] Ethanol 96% ... [not found] 
+  [85/252] Ethanol Absolute ... [found] CAS: 64-17-5
+  [86/252] Ethylenediaminetetraacetate acid diPotassium dihyd ... [not found] 
+  [87/252] Ethylenediaminetetraacetate Acid diSodium dihydrat ... [not found] 
+  [88/252] Ferroin indicator solution ... [not found] 
+  [89/252] FibreBag ADF ... [not found] 
+  [90/252] FibreBag FR ... [not found] 
+  [91/252] Filter Micro Tips 0.2-10 mikroliter ... [not found] 
+  [92/252] Filter Micro Tips 100-1000 mikroliter ... [not found] 
+  [93/252] Filter Micro Tips 2-100 mikroliter ... [not found] 
+  [94/252] Folin-Ciocalteu's Phenol Reagent ... [not found] 
+  [95/252] Follin-ciocalteu's phenol reagent ... [not found] 
+  [96/252] Formic Acid 98-100% ... [not found] 
+  [97/252] Gel Red/Gel Staining ... [not found] 
+  [98/252] Gelatine for Microbiology ... [not found] 
+  [99/252] Giemsa's azur eosin methylene blue for microscopy ... [not found] 
+  [100/252] Glycerol ... [found] CAS: 56-81-5
+  [101/252] Glycine ... [found] CAS: 56-40-6
+  [102/252] Hydrochloric Acid 32% ... [not found] 
+  [103/252] Hydrochloric Acid 37% ... [not found] 
+  [104/252] Hydrofluoric Acid 40% ... [not found] 
+  [105/252] Hydrogen Peroxide 30% ... [not found] 
+  [106/252] Hydroxylammonium Chloride ... [found] CAS: 5470-11-1
+  [107/252] Immersion Oil for Microscopy ... [not found] 
+  [108/252] Indigo Carmine ... [found] CAS: 860-22-0
+  [109/252] INORGANIC CRM ... [not found] 
+  [110/252] Iodine Resublimed ... [not found] 
+  [111/252] Iron (II) Sulfate Heptahydrate ... [found] CAS: 7782-63-0
+  [112/252] Iron (III) Chloride Hexahydrate ... [not found] 
+  [113/252] Iso-Octane ... [found] CAS: 85404-20-2
+  [114/252] Kaolin Powder ... [not found] 
+  [115/252] Kertas Saring ... [not found] 
+  [116/252] KIT Ekstraksi DNA ... [not found] 
+  [117/252] Kjeldahl Tablets for Wieninger Method ... [not found] 
+  [118/252] Kontrol Positif Babi ... [not found] 
+  [119/252] Kontrol Positif Tikus ... [not found] 
+  [120/252] Kultur Bacillus ... [not found] 
+  [121/252] Kultur E. coli ... [not found] 
+  [122/252] Kultur Listeria ... [not found] 
+  [123/252] Kultur S. aureus ... [not found] 
+  [124/252] Kultur Salmonella ... [not found] 
+  [125/252] L-Proline ... [found] CAS: 147-85-3
+  [126/252] L(+)Ascorbic Acid ... [not found] 
+  [127/252] Lanthanum (III) Chloride Heptahydrate 98% ... [not found] 
+  [128/252] Lead (II) Acetate trihydrate ... [not found] 
+  [129/252] Lugol's Solution ... [not found] 
+  [130/252] Magnesium Chloride hexahydrate ... [found] CAS: 616-575-1
+  [131/252] Magnesium Hydroxide Carbonate ... [found] CAS: 609-673-0
+  [132/252] Magnesium Oxide ... [found] CAS: 215-171-9
+  [133/252] Magnesium Sulfate anhydrous ... [found] CAS: 7487-88-9
+  [134/252] Magnesium Sulfate heptahydrate ... [found] CAS: 10034-99-8
+  [135/252] Malachite green Oxalate for Microscopy ... [not found] 
+  [136/252] Manganese (II) Chloride tetrahydrate ... [not found] 
+  [137/252] Master Mix 2x PCR ... [not found] 
+  [138/252] Mercury (II) Chloride ... [found] CAS: 7487-94-7
+  [139/252] Mercury (II) Iodide ... [found] CAS: 7774-29-0
+  [140/252] Methanol ... [found] CAS: 67-56-1
+  [141/252] Methyl Orange indicator ... [found] CAS: 547-58-0
+  [142/252] Methyl Red indicator ... [not found] 
+  [143/252] Methylene blue for Microscopy ... [not found] 
+  [144/252] Micro Tub ... [not found] 
+  [145/252] Mrs agar ... [not found] 
+  [146/252] n-Hexane ... [found] CAS: 110-54-3
+  [147/252] Nessler Reagent A ... [not found] 
+  [148/252] Nessler Reagent B ... [not found] 
+  [149/252] Nfw ... [found] 
+  [150/252] Ninhydrin ... [found] CAS: 485-47-2
+  [151/252] Nitric Acid 65% ... [not found] 
+  [152/252] Nutrient Agar ... [not found] 
+  [153/252] Nutrient Broth ... [not found] 
+  [154/252] ortho-Phosporic Acid 85% ... [not found] 
+  [155/252] Oxalic Acid dihydrate ... [found] CAS: 6153-56-6
+  [156/252] Paraffin Liquid ... [found] 
+  [157/252] PCR Tube ... [not found] 
+  [158/252] Perchloric Acid 60% ... [not found] 
+  [159/252] Petroleum Benzine raange 40-60 C ... [not found] 
+  [160/252] Petroleum Ether ... [not found] 
+  [161/252] PH CRM ... [not found] 
+  [162/252] Phenol ... [found] CAS: 108-95-2
+  [163/252] Phenol red indicator ... [found] CAS: 143-74-8
+  [164/252] Phenolpthalein indicator ... [not found] 
+  [165/252] Phenolpthalein Solution 1% in ethanol ... [not found] 
+  [166/252] Plate Count Agar ... [not found] 
+  [167/252] Potassium Antimony (III) Tartrate trihydrate ... [not found] 
+  [168/252] Potassium Bromate ... [found] CAS: 7758-01-2
+  [169/252] Potassium Bromide ... [found] CAS: 7758-02-3
+  [170/252] Potassium Chloride ... [found] CAS: 7447-40-7
+  [171/252] Potassium Chloride Solution Saturated 100 ... [not found] 
+  [172/252] Potassium Chromate ... [found] CAS: 7789-00-6
+  [173/252] Potassium Dichromate ... [found] CAS: 7778-50-9
+  [174/252] Potassium Dihydrogen Phosphate ... [found] CAS: 7778-77-0
+  [175/252] Potassium Disulfate ... [found] CAS: 7790-62-7
+  [176/252] Potassium Hexachloroplatinat ... [not found] 
+  [177/252] Potassium Hexacyanoferrate (III) ... [found] CAS: 237-323-3
+  [178/252] Potassium Hydrogen Phtalat ... [not found] 
+  [179/252] Potassium Hydroxide ... [found] CAS: 1310-58-3
+  [180/252] Potassium Iodide ... [found] CAS: 7681-11-0
+  [181/252] Potassium Nitrate ... [found] CAS: 7757-79-1
+  [182/252] Potassium Permanganate ... [found] CAS: 7722-64-7
+  [183/252] Potassium Sodium Tartrate tetrahydrate ... [found] CAS: 6381-59-5
+  [184/252] Potassium standard solution ... [not found] 
+  [185/252] Potassium Sulfate ... [found] CAS: 7778-80-5
+  [186/252] Potassium Sulfide ... [found] CAS: 1312-73-8
+  [187/252] Potassium Thiocyanate ... [found] CAS: 333-20-0
+  [188/252] Potato Dextrose Agar ... [not found] 
+  [189/252] Primer Babi ... [not found] 
+  [190/252] Primer Tikus ... [not found] 
+  [191/252] Rogosa Agar Lactobacillus ... [not found] 
+  [192/252] Selenium ... [found] CAS: 7782-49-2
+  [193/252] Silicon Dioxide ... [found] CAS: 7631-86-9
+  [194/252] Silver Nitrate ... [found] CAS: 7761-88-8
+  [195/252] Sodium Acetate anhydrous ... [found] CAS: 127-09-3
+  [196/252] Sodium Acetate trihydrate ... [found] CAS: 6131-90-4
+  [197/252] Sodium Azide Extra Pure ... [not found] 
+  [198/252] Sodium Carbonate anhydous ... [not found] 
+  [199/252] Sodium Carbonate anhydrous ... [not found] CAS: 497-19-8
+  [200/252] Sodium Chloride ... [found] CAS: 7647-14-5
+  [201/252] Sodium dihydrogen Phosphate monohydrate ... [not found] 
+  [202/252] Sodium disulfite (metabisulfite) ... [not found] 
+  [203/252] Sodium dodecyl Sulfate ... [found] CAS: 151-21-3
+  [204/252] Sodium Fluoride ... [found] CAS: 7681-49-4
+  [205/252] Sodium Hydrogen Carbonate ... [found] CAS: 144-55-8
+  [206/252] Sodium Hydroxide ... [found] CAS: 1310-73-2
+  [207/252] Sodium Nitrate ... [found] CAS: 7631-99-4
+  [208/252] Sodium Nitrite ... [found] CAS: 7632-00-0
+  [209/252] Sodium Sulfate anhydrous ... [found] CAS: 7757-82-6
+  [210/252] Sodium Sulfite anhydrous ... [found] CAS: 7757-83-7
+  [211/252] Sodium thiosulfate anhydrous ... [found] CAS: 7772-98-7
+  [212/252] Sodium thiosulfate pentahydrate ... [found] CAS: 10102-17-7
+  [213/252] Starch ... [not found] 
+  [214/252] Sulfanilamide >99% ... [not found] 
+  [215/252] Sulfuric Acid ... [found] CAS: 7664-93-9
+  [216/252] Sulfuric Acid 98% ... [not found] 
+  [217/252] Tannic Acid ... [found] CAS: 5424-20-4
+  [218/252] TBE (Tris Buffer Edta) ... [not found] 
+  [219/252] TE Buffer ... [found] CAS: 93777-65-2
+  [220/252] tetra-Sodium di-Phosphate decahydrate ... [not found] 
+  [221/252] Tin (II) Chloride dihydrate ... [found] 
+  [222/252] Titriplex I ... [found] CAS: 139-13-9
+  [223/252] Titriplex II ... [found] CAS: 60-00-4
+  [224/252] Titriplex III ... [found] CAS: 139-33-3
+  [225/252] Toluene ... [found] CAS: 108-88-3
+  [226/252] Trace Metal CRM ... [not found] 
+  [227/252] tri-Sodium Citrate dihydrate ... [found] CAS: 6132-04-3
+  [228/252] tri-Sodium Phosphate dodecahydrate ... [not found] 
+  [229/252] Trichloroacetic acid ... [found] CAS: 76-03-9
+  [230/252] Triple sugar iron agar ... [not found] 
+  [231/252] Tungsten (IV) Oxide ... [found] CAS: 234-842-7
+  [232/252] TURBIDITY CRM ... [not found] 
+  [233/252] Tween 80 ... [not found] 
+  [234/252] Vanadate-molybdate reagent ... [not found] 
+  [235/252] Xylene ... [not found] 
+  [236/252] Yeast Extract Agar ... [not found] 
+  [237/252] Zinc Acetate dihydrate ... [found] CAS: 611-865-4
+  [238/252] Zinc Sulfate heptahydrate ... [found] CAS: 7446-20-0
+  [239/252] Sucrose for tissue culture ... [not found] 
+  [240/252] Sucrose pure ... [not found] 
+  [241/252] Casein acc. to Hammarsten, 95% Protein ... [not found] 
+  [242/252] Casein fat free purified ... [not found] 
+  [243/252] Chloroform : Isoamyl Alcohol (24:1) ... [not found] 
+  [244/252] Phenol:Chloroform:Isoamyl Alcohol (25:24:1) pH 8.0 ... [not found] 
+  [245/252] Ethyl Ether extrapure AR, ACS, ExiPlus™, 99.5% ... [not found] 
+  [246/252] Tris Hydrochloride (Tris HCl) for molecular biolog ... [not found] 
+  [247/252] Whatman filter paper grade 42 ... [not found] 
+  [248/252] Safranin ... [found] CAS: 477-73-6
+  [249/252] Tryptone Soya Agar (TSA) ... [not found] 
+  [250/252] Cotton swab steril ... [not found] 
+  [251/252] Sodium Chloride for Intravenous Infusion ... [not found] 
+  [252/252] Aquadest ... [not found] 
+
+Saving enriched catalogue to: lab_sys_master_catalogue_enriched.xlsx

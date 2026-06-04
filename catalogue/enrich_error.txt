@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\lab_sys\catalogue\enrich_catalogue.py", line 176, in <module>
+    main()
+    ~~~~^^
+  File "D:\lab_sys\catalogue\enrich_catalogue.py", line 170, in main
+    print("\n\u2713 Done! Open lab_sys_master_catalogue_enriched.xlsx to see results.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sebas\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
