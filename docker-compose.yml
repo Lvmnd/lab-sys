@@ -1,0 +1,40 @@
+services:
+
+  senaite:
+    image: senaite/senaite:2.x
+    container_name: future_university_senaite
+    ports:
+      - "8081:8080"
+    environment:
+      - SITE_ID=future_university_lims
+      - ADMIN_USER=admin
+      - ADMIN_PASSWORD=FutureUniv2025!
+    volumes:
+      - senaite_data:/data
+    restart: unless-stopped
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    container_name: future_university_db
+    environment:
+      - POSTGRES_DB=lims_db
+      - POSTGRES_USER=lims_user
+      - POSTGRES_PASSWORD=FutureUniv2025!
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7-alpine
+    container_name: future_university_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+volumes:
+  senaite_data:
+  postgres_data:
