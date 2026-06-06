@@ -20,4 +20,7 @@ urlpatterns = [
 
     # Needs Request module
     path('', include('apps.needs.urls')),
+
+    # Booking module
+    path('', include('apps.booking.urls')),
 ]

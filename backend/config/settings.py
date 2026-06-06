@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django_filters',
     # Local
     'apps.needs',
+    'apps.booking',
 ]
 
 # ── MIDDLEWARE ────────────────────────────────────────────
