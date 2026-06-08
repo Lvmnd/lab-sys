@@ -1,0 +1,128 @@
+// Future University LIMS — Database Schema
+// Paste this at dbdiagram.io to view and share
+
+Table users {
+  id uuid [pk]
+  username varchar [unique]
+  email varchar [unique]
+  full_name varchar
+  role varchar
+  created_at timestamp
+}
+
+Table catalogue_item {
+  id uuid [pk]
+  item_code varchar [unique]
+  common_name varchar
+  iupac_name varchar
+  cas_number varchar
+  molecular_formula varchar
+  molecular_weight varchar
+  category varchar
+  unit varchar
+  ghs_hazard_codes varchar
+  ghs_pictograms varchar
+  storage_condition varchar
+  study_programs varchar
+  is_active boolean
+  created_at timestamp
+}
+
+Table needs_request {
+  id uuid [pk]
+  request_code varchar [unique]
+  requested_by uuid [ref: > users.id]
+  catalogue_item_id uuid [ref: > catalogue_item.id]
+  quantity_requested decimal
+  quantity_approved decimal
+  unit varchar
+  reason text
+  floor varchar
+  lab_room varchar
+  study_program varchar
+  urgency varchar
+  date_needed date
+  status varchar
+  rejection_reason text
+  reviewed_by uuid [ref: > users.id]
+  reviewed_at timestamp
+  created_at timestamp
+}
+
+Table consolidated_request {
+  id uuid [pk]
+  catalogue_item_id uuid [ref: > catalogue_item.id]
+  total_quantity decimal
+  approved_quantity decimal
+  unit varchar
+  status varchar
+  admin_notes text
+  reviewed_by uuid [ref: > users.id]
+  reviewed_at timestamp
+  consolidated_at timestamp
+}
+
+Table lab_room {
+  id uuid [pk]
+  room_code varchar [unique]
+  name varchar
+  floor varchar
+  room_type varchar
+  capacity int
+  study_program varchar
+  status varchar
+  description text
+  facilities text
+  responsible_technician uuid [ref: > users.id]
+  created_at timestamp
+}
+
+Table equipment {
+  id uuid [pk]
+  equipment_code varchar [unique]
+  name varchar
+  brand varchar
+  model_number varchar
+  serial_number varchar [unique]
+  lab_room_id uuid [ref: > lab_room.id]
+  status varchar
+  description text
+  requires_training boolean
+  max_booking_hours int
+  next_maintenance date
+  purchased_date date
+  created_at timestamp
+}
+
+Table booking {
+  id uuid [pk]
+  booking_code varchar [unique]
+  booked_by uuid [ref: > users.id]
+  lab_room_id uuid [ref: > lab_room.id]
+  equipment_id uuid [ref: > equipment.id]
+  start_time timestamp
+  end_time timestamp
+  purpose varchar
+  study_program varchar
+  participant_count int
+  notes text
+  status varchar
+  rejection_reason text
+  approved_by uuid [ref: > users.id]
+  approved_at timestamp
+  is_recurring boolean
+  recurrence_rule varchar
+  created_at timestamp
+}
+
+Table maintenance_schedule {
+  id uuid [pk]
+  lab_room_id uuid [ref: > lab_room.id]
+  equipment_id uuid [ref: > equipment.id]
+  title varchar
+  start_time timestamp
+  end_time timestamp
+  notes text
+  created_by uuid [ref: > users.id]
+  created_at timestamp
+}
