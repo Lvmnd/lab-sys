@@ -17,11 +17,12 @@ class LabRoom(models.Model):
     Each room belongs to a floor and has a type and capacity.
     """
     FLOOR_CHOICES = [
-        ('1', 'Floor 1 — Teaching Lab'),
-        ('2', 'Floor 2 — Teaching Lab'),
-        ('3', 'Floor 3 — Teaching Lab'),
-        ('4', 'Floor 4 — Research Lab'),
-        ('5', 'Floor 5 — Office'),
+        ('APU', 'APU Building'),
+        ('1',   'Floor 1 — Teaching Lab (New Building)'),
+        ('2',   'Floor 2 — Teaching Lab (New Building)'),
+        ('3',   'Floor 3 — Teaching Lab (New Building)'),
+        ('4',   'Floor 4 — Research Lab (New Building)'),
+        ('5',   'Floor 5 — Office (New Building)'),
     ]
     TYPE_CHOICES = [
         ('teaching',    'Teaching Laboratory'),
@@ -52,7 +53,7 @@ class LabRoom(models.Model):
     id              = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     room_code       = models.CharField(max_length=20, unique=True)
     name            = models.CharField(max_length=100)
-    floor           = models.CharField(max_length=1, choices=FLOOR_CHOICES)
+    floor           = models.CharField(max_length=3, choices=FLOOR_CHOICES)
     room_type       = models.CharField(max_length=20, choices=TYPE_CHOICES, default='teaching')
     capacity        = models.PositiveIntegerField(default=30, help_text="Max number of people")
     study_program   = models.CharField(max_length=50, choices=PROGRAM_CHOICES, default='General')

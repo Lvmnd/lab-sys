@@ -8,12 +8,13 @@ import { useState, useEffect } from "react";
 const API_BASE = "http://localhost:8000/api";
 
 const FLOORS = [
-  { value: "", label: "All Floors" },
-  { value: "1", label: "Floor 1 — Teaching Lab" },
-  { value: "2", label: "Floor 2 — Teaching Lab" },
-  { value: "3", label: "Floor 3 — Teaching Lab" },
-  { value: "4", label: "Floor 4 — Research Lab" },
-  { value: "5", label: "Floor 5 — Office" },
+  { value: "",    label: "All Floors" },
+  { value: "APU", label: "APU Building" },
+  { value: "1",   label: "Floor 1 — Teaching Lab (New Building)" },
+  { value: "2",   label: "Floor 2 — Teaching Lab (New Building)" },
+  { value: "3",   label: "Floor 3 — Teaching Lab (New Building)" },
+  { value: "4",   label: "Floor 4 — Research Lab (New Building)" },
+  { value: "5",   label: "Floor 5 — Office (New Building)" },
 ];
 
 const PROGRAMS = [
@@ -243,7 +244,7 @@ const S = {
 };
 
 // ── MAIN COMPONENT ────────────────────────────────────────
-export default function BookingPage() {
+export default function BookingPage({ token = "" }) {
   const [activeTab, setActiveTab] = useState("book");
 
   return (
@@ -275,16 +276,16 @@ export default function BookingPage() {
           ))}
         </div>
 
-        {activeTab === "book"       && <NewBookingForm />}
+        {activeTab === "book"       && <NewBookingForm token={token} />}
         {activeTab === "rooms"      && <RoomBrowser />}
-        {activeTab === "mybookings" && <MyBookings />}
+        {activeTab === "mybookings" && <MyBookings token={token} />}
       </div>
     </div>
   );
 }
 
 // ── NEW BOOKING FORM ──────────────────────────────────────
-function NewBookingForm() {
+function NewBookingForm({ token }) {
   const [step,          setStep]          = useState(1);
   const [bookingType,   setBookingType]   = useState("room");
   const [rooms,         setRooms]         = useState([]);
@@ -315,9 +316,11 @@ function NewBookingForm() {
     setLoading(true);
     const params = new URLSearchParams({ available_only: "true" });
     if (filterFloor) params.set("floor", filterFloor);
-    fetch(`${API_BASE}/rooms/?${params}`)
+    const url = `${API_BASE}/rooms/?${params}`;
+    console.log("Fetching rooms from:", url);
+    fetch(url)
       .then(r => r.json())
-      .then(d => setRooms(Array.isArray(d) ? d : d.results || []))
+      .then(d => setRooms(d.results || (Array.isArray(d) ? d : [])))
       .catch(() => setRooms([]))
       .finally(() => setLoading(false));
   }, [bookingType, filterFloor]);
@@ -330,7 +333,7 @@ function NewBookingForm() {
     if (filterFloor) params.set("floor", filterFloor);
     fetch(`${API_BASE}/equipment/?${params}`)
       .then(r => r.json())
-      .then(d => setEquipment(Array.isArray(d) ? d : d.results || []))
+      .then(d => setEquipment(d.results || (Array.isArray(d) ? d : [])))
       .catch(() => setEquipment([]))
       .finally(() => setLoading(false));
   }, [bookingType, filterFloor]);
@@ -365,7 +368,10 @@ function NewBookingForm() {
 
       const res = await fetch(`${API_BASE}/bookings/`, {
         method:  "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`
+        },
         body:    JSON.stringify(body),
       });
       if (!res.ok) {
@@ -660,9 +666,11 @@ function RoomBrowser() {
     setLoading(true);
     const params = new URLSearchParams();
     if (floor) params.set("floor", floor);
-    fetch(`${API_BASE}/rooms/?${params}`)
+    const url = `${API_BASE}/rooms/?${params}`;
+    console.log("Fetching rooms from:", url);
+    fetch(url)
       .then(r => r.json())
-      .then(d => setRooms(Array.isArray(d) ? d : d.results || []))
+      .then(d => setRooms(d.results || (Array.isArray(d) ? d : [])))
       .catch(() => setRooms([]))
       .finally(() => setLoading(false));
   }, [floor]);
@@ -717,13 +725,15 @@ function RoomBrowser() {
 }
 
 // ── MY BOOKINGS ───────────────────────────────────────────
-function MyBookings() {
+function MyBookings({ token = "" }) {
   const [bookings, setBookings] = useState([]);
   const [loading,  setLoading]  = useState(false);
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${API_BASE}/bookings/my-bookings/`)
+    fetch(`${API_BASE}/bookings/my-bookings/`, {
+      headers: { "Authorization": `Bearer ${token}` }
+    })
       .then(r => r.json())
       .then(d => setBookings(Array.isArray(d) ? d : d.results || []))
       .catch(() => setBookings([]))

@@ -81,11 +81,12 @@ class NeedsRequest(models.Model):
     ]
 
     FLOOR_CHOICES = [
-        ('1', 'Floor 1 — Teaching Lab'),
-        ('2', 'Floor 2 — Teaching Lab'),
-        ('3', 'Floor 3 — Teaching Lab'),
-        ('4', 'Floor 4 — Research Lab'),
-        ('5', 'Floor 5 — Office'),
+        ('APU', 'APU Building'),
+        ('1',   'Floor 1 — Teaching Lab (New Building)'),
+        ('2',   'Floor 2 — Teaching Lab (New Building)'),
+        ('3',   'Floor 3 — Teaching Lab (New Building)'),
+        ('4',   'Floor 4 — Research Lab (New Building)'),
+        ('5',   'Floor 5 — Office (New Building)'),
     ]
 
     PROGRAM_CHOICES = [
@@ -106,7 +107,7 @@ class NeedsRequest(models.Model):
     quantity_approved  = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     unit            = models.CharField(max_length=30)
     reason          = models.TextField(help_text="Why is this item needed?")
-    floor           = models.CharField(max_length=1, choices=FLOOR_CHOICES)
+    floor           = models.CharField(max_length=3, choices=FLOOR_CHOICES)
     lab_room        = models.CharField(max_length=100, blank=True)
     study_program   = models.CharField(max_length=50, choices=PROGRAM_CHOICES)
     urgency         = models.CharField(max_length=10, choices=URGENCY_CHOICES, default='medium')

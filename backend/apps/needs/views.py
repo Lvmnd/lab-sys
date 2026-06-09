@@ -34,7 +34,7 @@ class CatalogueItemViewSet(viewsets.ReadOnlyModelViewSet):
     Catalogue items — read only for all authenticated users.
     Supports live search for the needs request form dropdown.
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = []
     filter_backends    = [filters.SearchFilter, filters.OrderingFilter]
     search_fields      = ['common_name', 'iupac_name', 'cas_number', 'category']
     ordering_fields    = ['common_name', 'category']

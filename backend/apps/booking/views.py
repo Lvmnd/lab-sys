@@ -64,7 +64,7 @@ class LabRoomViewSet(viewsets.ModelViewSet):
     def get_permissions(self):
         if self.action in ['create', 'update', 'partial_update', 'destroy']:
             return [IsAdminOrTechnician()]
-        return [IsAuthenticated()]
+        return []
 
     @action(detail=True, methods=['get'], url_path='availability')
     def availability(self, request, pk=None):
@@ -151,7 +151,7 @@ class EquipmentViewSet(viewsets.ModelViewSet):
     def get_permissions(self):
         if self.action in ['create', 'update', 'partial_update', 'destroy']:
             return [IsAdminOrTechnician()]
-        return [IsAuthenticated()]
+        return []
 
     @action(detail=True, methods=['get'], url_path='availability')
     def availability(self, request, pk=None):
@@ -231,9 +231,9 @@ class BookingViewSet(viewsets.ModelViewSet):
         return BookingSerializer
 
     def get_permissions(self):
-        if self.action in ['update', 'partial_update']:
+        if self.action in ['create', 'update', 'partial_update', 'destroy']:
             return [IsAdminOrTechnician()]
-        return [IsAuthenticated()]
+        return []
 
     def destroy(self, request, *args, **kwargs):
         booking = self.get_object()
