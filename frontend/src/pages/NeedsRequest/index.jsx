@@ -10,11 +10,12 @@ const API_BASE = "http://localhost:8000/api";
 
 // ── CONSTANTS ─────────────────────────────────────────────
 const FLOORS = [
-  { value: "1", label: "Floor 1 — Teaching Lab" },
-  { value: "2", label: "Floor 2 — Teaching Lab" },
-  { value: "3", label: "Floor 3 — Teaching Lab" },
-  { value: "4", label: "Floor 4 — Research Lab" },
-  { value: "5", label: "Floor 5 — Office" },
+  { value: "APU", label: "APU Building — Current" },
+  { value: "1",   label: "Floor 1 — Teaching Lab (New Building)" },
+  { value: "2",   label: "Floor 2 — Teaching Lab (New Building)" },
+  { value: "3",   label: "Floor 3 — Teaching Lab (New Building)" },
+  { value: "4",   label: "Floor 4 — Research Lab (New Building)" },
+  { value: "5",   label: "Floor 5 — Office (New Building)" },
 ];
 
 const PROGRAMS = [
@@ -306,7 +307,7 @@ function ItemCard({ item }) {
 }
 
 // ── MAIN FORM ─────────────────────────────────────────────
-export default function NeedsRequestForm() {
+export default function NeedsRequestForm({ token = "" }) {
   const [query,       setQuery]       = useState("");
   const [results,     setResults]     = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -377,7 +378,10 @@ export default function NeedsRequestForm() {
     try {
       const res = await fetch(`${API_BASE}/needs/`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`,
+        },
         body: JSON.stringify({
           catalogue_item_id:  selectedItem.id,
           quantity_requested: Number(form.quantity),
