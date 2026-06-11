@@ -251,11 +251,17 @@ class BookingViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'], url_path='my-bookings')
     def my_bookings(self, request):
-        """Current user's upcoming bookings."""
+        """Current user's bookings — upcoming first, then past."""
+        from django.db.models import Case, When, Value, IntegerField
         qs = Booking.objects.filter(
             booked_by=request.user,
-            start_time__gte=timezone.now(),
-        ).select_related('lab_room', 'equipment').order_by('start_time')
+        ).select_related('lab_room', 'equipment').annotate(
+            is_upcoming=Case(
+                When(start_time__gte=timezone.now(), then=Value(0)),
+                default=Value(1),
+                output_field=IntegerField(),
+            )
+        ).order_by('is_upcoming', 'start_time')
         return Response(BookingSerializer(qs, many=True, context={'request': request}).data)
 
     @action(detail=True, methods=['post'], url_path='approve')

@@ -10,7 +10,7 @@ const API_BASE = "http://localhost:8000/api";
 
 // ── CONSTANTS ─────────────────────────────────────────────
 const FLOORS = [
-  { value: "APU", label: "APU Building — Current" },
+  { value: "APU", label: "APU Building" },
   { value: "1",   label: "Floor 1 — Teaching Lab (New Building)" },
   { value: "2",   label: "Floor 2 — Teaching Lab (New Building)" },
   { value: "3",   label: "Floor 3 — Teaching Lab (New Building)" },

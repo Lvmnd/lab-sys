@@ -730,6 +730,7 @@ function MyBookings({ token = "" }) {
   const [loading,  setLoading]  = useState(false);
 
   useEffect(() => {
+    if (!token) return;
     setLoading(true);
     fetch(`${API_BASE}/bookings/my-bookings/`, {
       headers: { "Authorization": `Bearer ${token}` }
@@ -738,16 +739,16 @@ function MyBookings({ token = "" }) {
       .then(d => setBookings(Array.isArray(d) ? d : d.results || []))
       .catch(() => setBookings([]))
       .finally(() => setLoading(false));
-  }, []);
+  }, [token]);
 
   return (
     <div style={S.card}>
-      <div style={S.sectionTitle}><span>📋</span> My Upcoming Bookings</div>
+      <div style={S.sectionTitle}><span>📋</span> My Bookings</div>
       {loading ? (
         <div style={S.emptyState}>Loading...</div>
       ) : bookings.length === 0 ? (
         <div style={S.emptyState}>
-          No upcoming bookings. Make a booking using the New Booking tab!
+          No bookings found. Make a booking using the New Booking tab!
         </div>
       ) : (
         bookings.map(b => (
