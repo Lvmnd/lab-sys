@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     # Local
     'apps.needs',
     'apps.booking',
+    'apps.procurement',
 ]
 
 # ── MIDDLEWARE ────────────────────────────────────────────

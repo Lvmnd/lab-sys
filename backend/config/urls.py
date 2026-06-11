@@ -23,4 +23,7 @@ urlpatterns = [
 
     # Booking module
     path('', include('apps.booking.urls')),
+
+    # Procurement module
+    path('', include('apps.procurement.urls')),
 ]
