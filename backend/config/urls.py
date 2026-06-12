@@ -26,4 +26,7 @@ urlpatterns = [
 
     # Procurement module
     path('', include('apps.procurement.urls')),
+
+    # Inventory module
+    path('', include('apps.inventory.urls')),
 ]

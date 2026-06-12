@@ -275,6 +275,48 @@ class GoodsReceiptViewSet(viewsets.ModelViewSet):
             receipt.status = 'confirmed'
             receipt.save()
 
+            # Auto-create or update stock items in inventory
+            from apps.inventory.models import StockItem, StockMovement
+            for item in receipt.items.all():
+                catalogue_item = item.po_line_item.catalogue_item
+                lab_room       = receipt.purchase_order.line_items.first().catalogue_item
+                
+                # Find the lab room from the consolidated request
+                # Default to first available room if not specified
+                from apps.booking.models import LabRoom
+                rooms = LabRoom.objects.filter(status='available')
+                if not rooms.exists():
+                    continue
+                lab_room = rooms.first()
+
+                # Get or create stock item
+                stock_item, created = StockItem.objects.get_or_create(
+                    catalogue_item = catalogue_item,
+                    lab_room       = lab_room,
+                    batch_number   = item.batch_number or '',
+                    defaults={
+                        'quantity':          item.quantity_received,
+                        'unit':              item.po_line_item.unit,
+                        'storage_location':  item.storage_location,
+                        'expiry_date':       item.expiry_date,
+                    }
+                )
+                if not created:
+                    stock_item.quantity += item.quantity_received
+                    stock_item.save()
+
+                # Record stock movement
+                StockMovement.objects.create(
+                    stock_item      = stock_item,
+                    movement_type   = 'in',
+                    quantity        = item.quantity_received,
+                    quantity_before = stock_item.quantity - item.quantity_received,
+                    quantity_after  = stock_item.quantity,
+                    reference       = receipt.receipt_number,
+                    notes           = f"Received via {receipt.receipt_number}",
+                    performed_by    = request.user,
+                )
+
         return Response(
             GoodsReceiptSerializer(receipt, context={'request': request}).data
         )
