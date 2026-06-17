@@ -29,4 +29,7 @@ urlpatterns = [
 
     # Inventory module
     path('', include('apps.inventory.urls')),
+
+    # Users module
+    path('', include('apps.users.urls')),
 ]

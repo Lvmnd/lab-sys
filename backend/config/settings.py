@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'apps.booking',
     'apps.procurement',
     'apps.inventory',
+    'apps.users',
 ]
 
 # ── MIDDLEWARE ────────────────────────────────────────────

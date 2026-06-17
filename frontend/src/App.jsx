@@ -3,11 +3,13 @@ import NeedsRequestForm from "./pages/NeedsRequest/index.jsx";
 import BookingPage from "./pages/Booking/index.jsx";
 import LoginPage from "./pages/Login/index.jsx";
 import Dashboard from "./pages/Dashboard/index.jsx";
+import UsersPage from "./pages/Users/index.jsx";
 
 const NAV = [
   { key: "dashboard", label: "📊 Dashboard",    desc: "System overview" },
   { key: "booking",   label: "📅 Lab Booking",  desc: "Book rooms & equipment" },
   { key: "needs",     label: "🧪 Request Items", desc: "Submit procurement needs" },
+  { key: "users",     label: "👥 Users",         desc: "Manage user accounts" },
 ];
 
 export default function App() {
@@ -88,6 +90,7 @@ export default function App() {
         {page === "dashboard" && <Dashboard token={token} />}
         {page === "booking"   && <BookingPage token={token} />}
         {page === "needs"     && <NeedsRequestForm token={token} />}
+        {page === "users"     && <UsersPage token={token} />}
       </div>
     </div>
   );
