@@ -50,10 +50,17 @@ class StockItemViewSet(viewsets.ModelViewSet):
             qs = qs.filter(lab_room__floor=params['floor'])
         if params.get('category'):
             qs = qs.filter(catalogue_item__category=params['category'])
+        all_items = list(qs)
         if params.get('low_stock') == 'true':
-            qs = [i for i in qs if i.is_low_stock]
+            ids = [i.pk for i in all_items if i.is_low_stock]
+            return StockItem.objects.filter(pk__in=ids).select_related(
+                'catalogue_item', 'lab_room'
+            )
         if params.get('expiring') == 'true':
-            qs = [i for i in qs if i.is_expiring_soon]
+            ids = [i.pk for i in all_items if i.is_expiring_soon]
+            return StockItem.objects.filter(pk__in=ids).select_related(
+                'catalogue_item', 'lab_room'
+            )
         return qs
 
     def get_serializer_class(self):

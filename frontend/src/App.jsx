@@ -2,14 +2,16 @@ import { useState } from "react";
 import NeedsRequestForm from "./pages/NeedsRequest/index.jsx";
 import BookingPage from "./pages/Booking/index.jsx";
 import LoginPage from "./pages/Login/index.jsx";
+import Dashboard from "./pages/Dashboard/index.jsx";
 
 const NAV = [
-  { key: "booking", label: "📅 Lab Booking",  desc: "Book rooms & equipment" },
-  { key: "needs",   label: "🧪 Request Items", desc: "Submit procurement needs" },
+  { key: "dashboard", label: "📊 Dashboard",    desc: "System overview" },
+  { key: "booking",   label: "📅 Lab Booking",  desc: "Book rooms & equipment" },
+  { key: "needs",     label: "🧪 Request Items", desc: "Submit procurement needs" },
 ];
 
 export default function App() {
-  const [page,     setPage]     = useState("booking");
+  const [page,     setPage]     = useState("dashboard");
   const [token,    setToken]    = useState(localStorage.getItem("lims_token") || "");
   const [username, setUsername] = useState(localStorage.getItem("lims_username") || "");
 
@@ -83,8 +85,9 @@ export default function App() {
         </button>
       </nav>
       <div>
-        {page === "booking" && <BookingPage token={token} />}
-        {page === "needs"   && <NeedsRequestForm token={token} />}
+        {page === "dashboard" && <Dashboard token={token} />}
+        {page === "booking"   && <BookingPage token={token} />}
+        {page === "needs"     && <NeedsRequestForm token={token} />}
       </div>
     </div>
   );
