@@ -13,9 +13,9 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # ── SECURITY ──────────────────────────────────────────────
-SECRET_KEY = os.getenv('SECRET_KEY', 'future-university-lims-dev-key-change-in-production')
-DEBUG      = os.getenv('DEBUG', 'True') == 'True'
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
+SECRET_KEY    = os.getenv('SECRET_KEY', 'future-university-lims-dev-key-change-in-production')
+DEBUG         = os.getenv('DEBUG', 'True') == 'True'
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,0.0.0.0').split(',')
 
 # ── APPLICATIONS ──────────────────────────────────────────
 INSTALLED_APPS = [
@@ -117,10 +117,12 @@ SIMPLE_JWT = {
 
 # ── CORS ──────────────────────────────────────────────────
 # Allow React frontend to call the API
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',  # Vite dev server
-    'http://localhost:3000',  # Create React App
-]
+CORS_ALLOWED_ORIGINS = os.getenv(
+    'CORS_ALLOWED_ORIGINS',
+    'http://localhost:5173,http://localhost:3000'
+).split(',')
+
+CORS_ALLOW_ALL_ORIGINS = DEBUG  # Allow all in dev, restrict in prod
 CORS_ALLOW_CREDENTIALS = True
 
 # ── INTERNATIONALIZATION ──────────────────────────────────
@@ -134,6 +136,9 @@ STATIC_URL  = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL   = '/media/'
 MEDIA_ROOT  = BASE_DIR / 'media'
+
+# Production static files
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

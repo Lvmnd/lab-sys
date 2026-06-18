@@ -6,7 +6,7 @@
 
 import { useState, useEffect } from "react";
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000/api";
 
 const STATUS_COLORS = {
   draft:     "#95A5A6",
